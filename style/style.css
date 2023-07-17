@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(24, 23, 23)!important;
+    justify-content: center;
+    align-items: center;
+}
+.area__carroussel{
+    margin-top: 70px;
+}
+
+.area__carroussel img{
+    margin-left: 0%;
+    width: 180px!important;
+    height: 280px!important;
+    border-radius: 5%;
+    
+}
+
+.obras-home{
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    color: aliceblue;
+}
+
+.row {
+    padding-top: 20px;
+}
+
+.obras-home img{
+    width: 120px!important;
+    height: 160px!important;
+    border-radius: 5%;
+}
