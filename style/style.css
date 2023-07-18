@@ -23,6 +23,7 @@ body{
     height: 270px!important;
     border-radius: 25px!important;
     padding: 7%;  
+    cursor: pointer;
 }
 
 .obras-home{
@@ -59,6 +60,7 @@ body{
 .obras-home img:hover{
     transition: 300ms;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .obras-home .botoes__home{
@@ -77,8 +79,19 @@ body{
 .obras-home .botoes__home:hover{
     transition: 300ms;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
+.footer .col-md-12{
+    text-align: center!important;
+    position: relative;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 80%!important;
+    height: 38px;
+    background-color: rgb(113, 129, 129);
+    border-radius: 5px!important;
+}
 
 .mais_lidos .row{
     color: aliceblue;
@@ -100,6 +113,23 @@ body{
     float: left;
     width: 60px;
     border-radius: 4px;
+}
+
+.c-kHYllS {
+    float: left;
+    margin-right: 8px;
+    margin-top: 21px;
+    text-align: center;
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 20px 0px;
 }
 
 .obra_tipo {
