@@ -7,6 +7,37 @@ body{
     background-color: rgb(24, 23, 23)!important;
     font-family: Worksans!important;
 }
+
+.cabecalho{
+    text-decoration: none;
+    height: 80px;
+    background: linear-gradient( #0066ff 0%, #ff999900 100%);
+}
+
+.cabecalho .itens_esquerda {
+    margin-top: 15px;
+    float: left;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho input{
+    color: black!important;
+    padding-right: 64px;
+    background: rgb(255 255 255 / 30%);
+    border: none;
+    border-radius: 19px;
+}
+
+.cabecalho .itens_direita {
+    margin-top: 15px;
+    float: right;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
 .area__carroussel{
     margin-top: 70px;
 }
@@ -52,15 +83,22 @@ body{
   }
 
 .obras-home img{
+    overflow: hidden;
+    position: relative;
     width: 120px!important;
     height: 160px!important;
     border-radius: 5%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease!important;
 }
 
 .obras-home img:hover{
-    transition: 300ms;
-    transform: scale(1.1);
+    transform: scale(1.06);
+    top: 0;
+    left: 0;
     cursor: pointer;
+    
 }
 
 .obras-home .botoes__home{
@@ -69,8 +107,8 @@ body{
     justify-content: center;
     padding: 0px 20px!Important;
     text-decoration: none;
-    border: 1px solid;
-    border-color: rgb(121, 122, 122);
+    border: 1px;
+    background-color: rgb(50, 51, 51);
     border-radius: 8%;
     color: aliceblue;
     margin-top: 5px;   
@@ -89,13 +127,20 @@ body{
     margin-top: 10px;
     width: 80%!important;
     height: 38px;
-    background-color: rgb(113, 129, 129);
+    color: white!important;
+    background-color: #0066ff;
     border-radius: 5px!important;
+}
+
+.footer .col-md-12:hover{
+    background-color: #2b96dd;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .mais_lidos .row{
     color: aliceblue;
-    text-align: center;   
+    text-align: center!important;   
     width: 20%;
     height: 700px;
     float: left;
@@ -109,6 +154,14 @@ body{
     font-size: 16px;
 }
 
+.mais_lidos .titulo_mais_lidos img{
+    text-align: center;
+    align-items: center!important;
+    width: 35px;
+    padding-left: 3%;
+    float: unset;
+   
+}
 .mais_lidos img{
     float: left;
     width: 60px;
