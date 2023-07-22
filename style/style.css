@@ -6,6 +6,7 @@
 body{
     background-color: rgb(24, 23, 23)!important;
     font-family: Worksans!important;
+    height: 100%;
 }
 
 .cabecalho{
@@ -14,7 +15,20 @@ body{
     background: linear-gradient( #0066ff 0%, #ff999900 100%);
 }
 
+.cabecalho_dektop:hover{
+    cursor: pointer;
+}
+
+.cabecalho span{
+    display: none;
+}
+
+.cabecalho ul{
+    display: none;
+}
+
 .cabecalho .itens_esquerda {
+    margin-left: 10px;
     margin-top: 15px;
     float: left;
     margin-right: 10px;
@@ -30,7 +44,8 @@ body{
     border-radius: 19px;
 }
 
-.cabecalho .itens_direita {
+.cabecalho .itens_direita  {
+    margin-right: 10px;
     margin-top: 15px;
     float: right;
     margin-left: 10px;
@@ -38,8 +53,14 @@ body{
     text-decoration: none;
 }
 
+.cabecalho #botão_login {
+    background-color: #040e688f!important;
+    padding: 0px 20px!Important;
+    border-radius: 10px;
+}
+
 .area__carroussel{
-    margin-top: 70px;
+    margin-top: 6%;
 }
 
 .area__carroussel .owl-carousel{
@@ -49,30 +70,26 @@ body{
 }
 
 .area__carroussel img{
-    margin-left: 10%;
     width: 170px!important;
     height: 270px!important;
-    border-radius: 25px!important;
+    border-radius: 13%!important;
     padding: 7%;  
     cursor: pointer;
 }
 
 .obras-home{
     text-align: center;
-    font-size: 12px;
+    font-size: 80%;
     float: left;
     color: aliceblue;
-    
-}
-
-.row {
-    padding-top: 20px;
+    overflow: hidden!important;
 }
 
 .obras-home .row {
+    padding-top: 20px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;   
 }
 
 .obras-home .col-sm-2 {
@@ -80,23 +97,24 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 15%;
   }
 
 .obras-home img{
-    overflow: hidden;
     position: relative;
+    max-width: 120px;
     width: 120px!important;
     height: 160px!important;
     border-radius: 5%;
-    overflow: hidden;
-    position: relative;
-    transition: transform 0.3s ease!important;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
-.obras-home img:hover{
-    transform: scale(1.06);
-    top: 0;
-    left: 0;
+.obras-home .col-sm-2 img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transition: scale(1.1);
+    transform: scale(1.1);
     cursor: pointer;
     
 }
@@ -125,7 +143,7 @@ body{
     position: relative;
     font-size: 20px;
     margin-top: 10px;
-    width: 80%!important;
+    width: 90%!important;
     height: 38px;
     color: white!important;
     background-color: #0066ff;
@@ -136,12 +154,12 @@ body{
     background-color: #2b96dd;
     cursor: pointer;
     transform: scale(1.1);
+    -moz-transition: all 0.4s!important;
 }
 
 .mais_lidos .row{
-    color: aliceblue;
-    text-align: center!important;   
-    width: 20%;
+    color: aliceblue;  
+    width: 25%;
     height: 700px;
     float: left;
     border-radius: 2%;
@@ -151,12 +169,12 @@ body{
 }
 
 .mais_lidos .col-12{
+    padding-top: 20px;
+    text-align: center;
     font-size: 16px;
 }
 
 .mais_lidos .titulo_mais_lidos img{
-    text-align: center;
-    align-items: center!important;
     width: 35px;
     padding-left: 3%;
     float: unset;
@@ -186,14 +204,22 @@ body{
 }
 
 .obra_tipo {
-    margin-top: 16px!important;
+    padding-left: 10px!important;
+    display: grid;
+}
+
+.c-jzzXVu{
+    margin-left: 28px;
 }
 
 .c-csTvhl-dkEfkH-badge-comic{
+    justify-content: center;
     background-color: red;
+    margin-left: 30px;
 }
   
 .tipo{
+    margin-right: 10px!important;
     margin-top: 10px;    
 }
 
@@ -205,4 +231,120 @@ body{
     font-weight: 600;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 412px){
+
+    .cabecalho .cabecalho_dektop{
+        display: none;
+    }
+
+    .cabecalho span{
+        float: left;
+        display: flex;
+    }
+
+    .cabecalho input{
+        float: right!important;
+        width: 80%;
+        position: inherit;
+    }
+
+    .material-symbols-outlined{
+        padding-top: 15px;
+    }
+
+    .menu{
+        z-index: 9999;
+        position: fixed;
+        display: flex;
+        flex-direction: column!important;
+        display: none;
+        height: auto;
+        
+    }
+
+    .menu ul{
+        background-color: rgba(0, 0, 0, 0.671);
+        position: fixed;
+        width: 50%;
+        height: auto;
+        border-radius: 10%;
+        padding: 1000px;
+        float: right;
+        display: flex;
+        flex-direction: column!important;
+    }
+
+    .menu  ul:hover{
+        cursor: pointer;
+    }
+
+    .menu li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu li:hover{
+        cursor: pointer;
+        background-color: rgba(105, 104, 104, 0.671);
+
+    }
+
+    .area__carroussel img {
+        width: 100%!important;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+
+    .obras-home .col-sm-2 {
+        padding-top: 15px;
+        width: 50%!important;
+        position: relative!important;
+        
+    }
+    
+    .mais_lidos .row{
+        color: aliceblue;  
+        margin-left: 20px;
+        width: 90%;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2%;
+        box-shadow: 0px 0px 10px 9px black;
+        font-size: 12px;
+    
+    }
+
+    .mais_lidos .titulo_mais_lidos{
+        text-align: center;
+    }
+
+    .mais_lidos .c-jzzXVu{
+        margin-left: 30px;
+    }
+
+    .c-csTvhl-dkEfkH-badge-comic{
+        margin-left: 30px;
+    }
+
+    .c-kHYllS{
+        float: left;
+        margin-right: 20px;
+        min-width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(58, 58, 58);
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 0px 20px 0px;
+    }
+
+    
 }

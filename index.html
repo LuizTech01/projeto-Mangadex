@@ -9,6 +9,7 @@
     
     <!-- importações bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
@@ -19,10 +20,28 @@
 
 <body>
   <header class="cabecalho">
-    <a class="itens_esquerda" href="index.html">Home</a>
-    <a class="itens_esquerda" href="">Series</a>
-    <a class="itens_direita" href="">Login</a>
-    <a class="itens_direita" href="">Registrar-se</a>
+    <div class="cabecalho_dektop">
+      <a class="itens_esquerda" href="index.html">Home</a>
+      <a class="itens_esquerda" href="">Series</a>
+      <a class="itens_direita" id="botão_login">Login</a>
+      <a class="itens_direita" href="">Registrar-se</a>
+    </div>
+
+    <span class="material-symbols-outlined" onclick="clickMenu()">
+      menu
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+    <menu class="menu" id="itens_menu">
+      <ul class="text-gray-100 font-sans font-bold p-0 m-0 flex flex-col gap-y-3 text-xs">
+        <li class="p-2 flex items-center gap-x-2"><a class="itens_esquerda" href="index.html">Home</a></li>
+        <li class="p-2 flex items-center gap-x-2"><a class="itens_esquerda" href="">Series</a></li>
+        <li class="p-2 flex items-center gap-x-2"><a class="itens_direita" href="">Login</a></li>
+        <li class="p-2 flex items-center gap-x-2"><a class="itens_direita" href="">Registrar-se</a></li>
+      </ul>
+    </menu>
     <input class="itens_direita" type="text" placeholder="Procurar">
   </header>
 
@@ -76,7 +95,7 @@
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-areturnersmagicshouldbespecial.jpg">
         <br>
-        Returner's Magic Should Special
+        Returner's Magic <br> Should Special
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
@@ -113,12 +132,21 @@
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
       </div>
+      <div class="col-sm-2">
+        <img src="assets/mini-capas/capa-thereturnofthe8thclassmage.jpg">
+        <br>
+        Return of The <br> 8th Class Mage       
+        
+        <a class="botoes__home">Capitulo 2</a>
+        <a class="botoes__home">Capitulo 1</a>
+      </div>
     </div>
+
     <div class="row">
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-imthemaxlevelnewbie.jpg">
         <br>
-        I'm the Max-Level Newbie
+        I'm the <br> Max-Level Newbie
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
@@ -134,7 +162,7 @@
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-latnasagasurvivalofaswordking.jpg">
         <br>
-        Survival of the Sword King
+        Survival of <br> the Sword King
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
@@ -155,12 +183,21 @@
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
       </div>
+      <div class="col-sm-2">
+        <img src="assets/mini-capas/capa-thenovel'sextra.jpg">
+        <br>
+        The Novel's Extra
+        
+        <a class="botoes__home">Capitulo 2</a>
+        <a class="botoes__home">Capitulo 1</a>
+      </div>
     </div>
+
     <div class="row">
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-promiseofanorchid.jpg">
         <br>
-        Promise of an Orchid
+        Promise of <br> an Orchid
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
@@ -168,7 +205,7 @@
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-ssclasssuicidehunter.jpg">
         <br>
-        SSS Class Suicide Hunter 
+        SSS Class <br> Suicide Hunter 
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
@@ -192,7 +229,15 @@
       <div class="col-sm-2">
         <img src="assets/mini-capas/capa-thearchmagereturnsafter4000years.jpg">
         <br>
-        The Archmage Returns After 4000 Years
+        The Archmage Returns <br> After 4000 Years
+        
+        <a class="botoes__home">Capitulo 2</a>
+        <a class="botoes__home">Capitulo 1</a>
+      </div>
+      <div class="col-sm-2">
+        <img src="assets/mini-capas/capa-thelazylordmastersthesword.jpg">
+        <br>
+        The Lazy Lord <br> Masters the Sword
         
         <a class="botoes__home">Capitulo 2</a>
         <a class="botoes__home">Capitulo 1</a>
